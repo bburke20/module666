@@ -9,16 +9,8 @@ while myTime <= 20:
     time.sleep(0.05)
     myTime = time.time() - start
     if RPL.digitalRead(fire) == 0:
-      #print('Detection')
       RPL.servoWrite(0,1590)
       time.sleep(0.5)
       RPL.servoWrite(0,1500)
-      time.sleep(0.5)
-      RPL.servoWrite(0,1590)
-      time.sleep(0.5)
-      RPL.servoWrite(0,1500)
-      time.sleep(0.5)
-      RPL.servoWrite(0,1590)
-      time.sleep(0.5)
-      RPL.servoWrite(0,1500)
+
 
